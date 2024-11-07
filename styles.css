@@ -24,6 +24,8 @@ h1, h2, h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom-left-radius: 30% 2vw;
+    border-bottom-right-radius: 30% 2vw;
 }
 
 .banner-content {
