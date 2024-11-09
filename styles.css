@@ -4,8 +4,29 @@ body {
     padding: 0;
 }
 
+
+
 section {
-    padding: 2em;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px 80px;
+    background-color: #f4f4f4;
+    display: flex;
+    text-align: justify;
+    justify-content: space-evenly;
+}
+
+.container-description{
+    width: 60%;
+}
+
+.image-right img {
+  max-width: 100%; /* A imagem não ultrapassará a largura do seu contêiner */
+  height: 30vh;  
+  border-radius: 10px;
+  margin-top: 65px;
+  
+    /* Mantém a proporção da altura */
 }
 
 h1, h2, h3 {
@@ -57,4 +78,41 @@ h1, h2, h3 {
     font-size: 1.2em;
     margin: 0;
     color: #ddd;
+}
+
+
+/* Estilos básicos para o menu de navegação */
+.navbar {
+    position: relative;
+    background: none;
+    padding: 10px 0;
+    text-align: center;
+    top: -35px;
+    z-index: 10;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
 }
