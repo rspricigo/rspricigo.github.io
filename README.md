@@ -13,3 +13,6 @@ Este projeto foi construído com o conceito de SPA, onde o JavaScript carrega os
 ## ⌨Tecnologias utilizadas
 
 ### HTML, CSS, JAVASCRIPT
+
+## Clique no link abaixo para acessar o projeto no git pages.
+https://rspricigo.github.io
