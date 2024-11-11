@@ -4,8 +4,6 @@ body {
     padding: 0;
 }
 
-
-
 section {
     padding: 20px;
     border-radius: 20px;
@@ -25,8 +23,6 @@ section {
   height: 30vh;  
   border-radius: 10px;
   margin-top: 65px;
-  
-    /* Mantém a proporção da altura */
 }
 
 h1, h2, h3 {
@@ -40,7 +36,7 @@ h1, h2, h3 {
 .banner {
     background-color: #333;
     color: #fff;
-    padding: 2em 0;
+    padding: 5em 0;
     text-align: center;
     display: flex;
     align-items: center;
@@ -80,7 +76,6 @@ h1, h2, h3 {
     color: #ddd;
 }
 
-
 /* Estilos básicos para o menu de navegação */
 .navbar {
     position: relative;
@@ -115,4 +110,52 @@ h1, h2, h3 {
 .nav-links a:hover {
     background-color: #555;
     border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .banner {
+        border-radius:  0;
+        padding: 2em 0;
+    }
+
+    .banner-content{
+        flex-direction: column;
+    }
+
+    .banner-text{
+        text-align: center;
+    }
+
+    .navbar{
+        position: relative;
+        top: -1px;
+        background-color: #333;
+        border: none;
+    }
+
+    section {
+        flex-direction: column;
+        margin: 0px 0px;
+        align-items: center;
+        border-radius: 0;
+    }
+
+    .container-description{
+        width: 100%;
+    }
+
+    .image-right img{
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+    section{
+        gap: 15px;
+    }
+    .image-right img{
+        height: 20vh;
+    }
 }
