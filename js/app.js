@@ -16,6 +16,7 @@ const projects = [
 ];
 
 async function loadPage(page){
+    console.log("loading page: " + page);
     try{
 
         const response = await fetch(`pages/${page}.html`);
@@ -41,11 +42,14 @@ async function loadPage(page){
 
 function navigate(page) {
     window.location.hash = page;
+    console.log("navegou");
     loadPage(page);
 }
 
-async function loadCards(){
+async function loadCards() {
+    console.log("loading Cards");
     const cardsContainer = document.getElementById('cards');
+    cardsContainer.innerHTML = '';
 
     try{
         const response = await fetch('components/card.html');
@@ -102,6 +106,7 @@ async function loadComponent(componentPath, elementId) {
 function init(){
 //Carrega os componentes
     const initialPage = window.location.hash.substring(1) || "home";
+    console.log("iniciou");
     navigate(initialPage);
     
     loadComponent('components/navbar.html', 'navbar');
@@ -111,6 +116,3 @@ function init(){
 
 
 window.addEventListener("load", init);
-window.addEventListener("hashchange", () => {
-    loadPage(window.location.hash.substring(1));
-});
